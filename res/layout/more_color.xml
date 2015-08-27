@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/more_yanse" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageView 
+	        android:id="@+id/backbtn"
+	        android:src="@drawable/circle2"
+	        android:layout_gravity="left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginBottom="5dp"
+	        />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.24"
+        android:orientation="vertical"
+        >
+        	    <ScrollView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" 
+		    android:scrollbarThumbVertical="@drawable/handle"
+		    android:scrollbarStyle="outsideOverlay"
+		    android:fadeScrollbars="false" 
+		     >
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical" >
+				    <TextView 
+				        android:id="@+id/text_color"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textSize="22sp"
+				        android:textColor="#fff"
+				        />
+			    </LinearLayout>
+	    </ScrollView>
+    </LinearLayout>
+    
+
+</LinearLayout>

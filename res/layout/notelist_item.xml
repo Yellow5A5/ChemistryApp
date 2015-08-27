@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/notesum" 
+    android:id="@+id/noteLayout">
+    <ImageView 
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notecircle"
+        android:contentDescription="@string/hello_world"/>
+    <TextView 
+        android:id="@+id/notetext"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="测试测试测试测试测试"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageButton
+        android:id="@+id/noteEdit"
+        android:layout_width="@dimen/activity_note_item_imagebtn_size"
+        android:layout_height="@dimen/activity_note_item_imagebtn_size"
+        android:contentDescription="@string/hello_world"
+        android:background="@drawable/noteedit"        
+        android:layout_marginRight="10dp"
+        />
+    <ImageButton
+        android:id="@+id/noteDelete"
+        android:layout_width="@dimen/activity_note_item_imagebtn_size"
+        android:layout_height="@dimen/activity_note_item_imagebtn_size"
+        android:contentDescription="@string/hello_world"
+        android:background="@drawable/notedelete"
+        android:layout_marginRight="10dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentRight="true"
+    android:visibility="gone"
+    android:id="@+id/popuplistview_material"
+    android:background="@android:color/transparent" >
+    <LinearLayout 
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/equipment_panel">
+        <!--横屏输入软键盘不会全屏显示 -->
+        <AutoCompleteTextView 
+            android:id="@+id/acTextMT"
+            android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:completionHint="@string/MThint"
+        	android:completionThreshold="1"
+        	android:dropDownHeight="200dp"
+        	android:hint="@string/MThint"
+        	android:imeOptions="flagNoExtractUi"
+        	android:lines="1"
+        	android:paddingRight="30dp"
+        	android:background="@drawable/edittext_bg"
+        	></AutoCompleteTextView>
+        <ImageButton
+            android:id="@+id/searchMT"
+            android:layout_width="25dp"
+        	android:layout_height="25dp"
+        	android:layout_marginLeft="-40dp"
+        	android:scaleType="fitXY"
+        	android:background="@drawable/search"
+        	android:contentDescription="@string/description"
+        	android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <ExpandableListView 
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/expandablelist_material"
+        android:cacheColorHint="#00000000" ></ExpandableListView>
+
+</LinearLayout>

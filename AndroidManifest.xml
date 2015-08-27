@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chemstudyingapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+            android:smallScreens="true"
+            android:normalScreens="true"
+            android:largeScreens="true"
+            android:resizeable="true"
+            android:anyDensity="true" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+         >
+        <activity
+            android:name="com.goudan.chemstudyingapp.jiazaiye.LoadActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.goudan.chemstudyingapp.main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>
+        <activity
+            android:name="com.goudan.chemstudyingapp.setting.Setting"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity 
+            android:name="com.goudan.chemstudyingapp.introduction.IntroductionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            ></activity>
+        <activity 
+            android:name="com.goudan.chemstudyingapp.setting.AppExplain"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            ></activity>
+        <activity 
+            android:name="com.goudan.chemstudyingapp.setting.AboutUs"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            ></activity>
+        <activity
+            android:name="com.goudan.chemstudyingapp.more.More_menu"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.goudan.chemstudyingapp.more.More_zhouqibiao"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.goudan.chemstudyingapp.more.More_suming"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.goudan.chemstudyingapp.more.More_Color"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.goudan.chemstudyingapp.more.More_xingzhi"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.goudan.chemstudyingapp.jiazaiye.GuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.goudan.chemstudyingapp.more.More_BBS"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity 
+            android:name="com.goudan.chemstudyingapp.setting.WriteToUs"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            ></activity>
+        <activity 
+            android:name="com.goudan.chemstudyingapp.more.SmallNote"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            ></activity>
+        <activity 
+            android:name="com.goudan.chemstudyingapp.more.NoteEdit"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            ></activity>
+        <activity 
+            android:name="com.goudan.chemstudyingapp.more.NoteNewEdit"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            ></activity>
+        <activity 
+            android:name="com.goudan.chemstudyingapp.more.NoteDialog"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent"
+            android:launchMode="singleInstance"
+            ></activity>
+        <activity 
+            android:name="com.goudan.chemstudyingapp.introduction.GuidePageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            ></activity>
+        <activity
+            android:name="com.goudan.chemstudyingapp.more.TeachTV"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.goudan.chemstudyingapp.imageUploader.UploadActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <service
+		    android:name="com.goudan.chemstudyingapp.service.FloatWindowService">
+            <intent-filter >
+                <action android:name="com.goudan.chemstudyingapp.service.FloatWindowService"/>
+            </intent-filter>
+        </service>
+    </application>
+    
+
+</manifest>

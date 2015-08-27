@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/noteeditpanel" >
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1" >
+	    <TextView 
+	        android:id="@+id/title"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/title"
+	        android:layout_centerVertical="true"
+	    	android:textSize="24sp"
+	        android:layout_marginLeft="10dp"
+	    	android:textColor="#fff"/>
+		<EditText 
+		    android:id="@+id/noteEditTitle"
+		    android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:background="@null"
+	        android:layout_centerVertical="true"
+	        android:textSize="24sp"
+	        android:singleLine="true"
+	        android:layout_toRightOf="@id/title"
+	        android:layout_marginLeft="10dp"
+	    	android:textColor="#fff"
+        	android:imeOptions="flagNoExtractUi"
+        	android:layout_toLeftOf="@id/backbtn"/>
+		<ImageView 
+	        android:id="@+id/backbtn"
+	        android:src="@drawable/notedelete"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginRight="15dp"
+	        android:contentDescription="@string/description"
+	        />
+	</RelativeLayout>
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+   	 	android:layout_height="fill_parent"
+   	 	android:layout_weight="0.24"
+   	 	android:padding="10dp">
+	    <EditText 
+	        android:id="@+id/noteEditContent"
+		    android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="24sp"
+	    	android:textColor="#fff"
+	    	android:lines="10"
+	    	android:gravity="top"
+	    	android:background="@null"
+        	android:imeOptions="flagNoExtractUi"/>
+	</RelativeLayout>
+
+</LinearLayout>
